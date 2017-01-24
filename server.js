@@ -100,6 +100,38 @@ app.get( "/about", ( req, res ) => {
 })
 
 
+app.get( "/projects", ( req, res ) => {
+
+
+  // Some dummy projects
+  const projects = [
+    {
+      id  : "1",
+      name: "First project in list"
+    },
+    {
+      id  : "2",
+      name: "My first real project"
+    },
+    {
+      id  : "3",
+      name: "This is not the last project"
+    }
+
+  ]
+
+  const locals = {
+    pageTitle: "Projects",
+    projects
+  }
+
+
+
+  res.render( "projects", locals )
+
+})
+
+
 
 // *****************************************************************************
 // *****************************************************************************

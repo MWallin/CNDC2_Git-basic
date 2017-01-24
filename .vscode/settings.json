@@ -15,5 +15,7 @@
     "README.md": false,
     "package.json": false
   }
+,
+"vsicons.presets.angular": false
 }
 // Project specific files

@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+
+
+  <h1><%= pageTitle %></h1>
+
+  <p>Hello there, these are our projects...</p>
+
+  <% locals.projects.forEach(function(project) { %>
+
+    <h1> <%= project.id %></h1>
+    <p> <%= project.name %></p>
+
+  <% }) %>
+
+
+
+
+<% include partials/footer %>
+
