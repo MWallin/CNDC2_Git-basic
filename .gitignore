@@ -6,3 +6,6 @@ typings
 
 # Dont include environmental variables
 .env
+
+# Never include logs
+*.log

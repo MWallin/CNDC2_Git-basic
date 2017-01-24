@@ -50,13 +50,13 @@ app.use( ( req, res, next ) => {
 })
 
 
-app.use( ( req, res, next ) => {
+// app.use( ( req, res, next ) => {
 
-  res.render( "maintenence", {
-    pageTitle: "Maintenence"
-  })
+//   res.render( "maintenence", {
+//     pageTitle: "Maintenence"
+//   })
 
-})
+// })
 
 
 
@@ -106,11 +106,12 @@ app.get( "/about", ( req, res ) => {
 // Server
 
 // Set correct port depending on local or via env
-app.set( "port", ( process.env.PORT || 3000 ) )
+const port = process.env.PORT || 3000
 
-app.listen( app.get( "port" ), function () {
 
-  console.log( "Server has started" )
+app.listen( port, function () {
+
+  console.log( `Server is up and running on port ${port}`  )
 
 })
 

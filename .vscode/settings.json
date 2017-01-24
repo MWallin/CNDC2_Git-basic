@@ -1,19 +1,19 @@
 {
   "files.exclude": {
     // Basic tooling files
-    ".vscode/": true,
-    ".env*": true,
-    ".eslint*": true,
-    ".gitignore": true,
-    ".htmlhintrc": true,
-    ".stylelintrc": true,
-    "typings": true,
-    "jsconfig.json": true,
-    "typings.json": true,
+    ".vscode/": false,
+    ".env*": false,
+    ".eslint*": false,
+    ".gitignore": false,
+    ".htmlhintrc": false,
+    ".stylelintrc": false,
+    "typings": false,
+    "jsconfig.json": false,
+    "typings.json": false,
     // Project files
-    "node_modules": true,
-    "README.md": true,
-    "package.json": true
+    "node_modules": false,
+    "README.md": false,
+    "package.json": false
   }
 }
 // Project specific files
